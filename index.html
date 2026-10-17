@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>MapLibre GlobalState Viewer</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <link href="https://unpkg.com/maplibre-gl@6/dist/maplibre-gl.css" rel="stylesheet" />
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    #panel {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      z-index: 10;
+      padding: 12px;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px #0002;
+    }
+
+    #language {
+      display: block;
+      margin-top: 10px;
+      padding: 6px;
+      width: 160px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <div id="panel">
+    <strong>Country Labels</strong>
+
+    <select id="language">
+      <option value="AR">العربية (アラビア語)</option>
+      <option value="BN">বাংলা (ベンガル語)</option>
+      <option value="DE">Deutsch (ドイツ語)</option>
+      <option value="EN">English (英語)</option>
+      <option value="ES">Español (スペイン語)</option>
+      <option value="FA">فارسی (ペルシア語)</option>
+      <option value="FR">Français (フランス語)</option>
+      <option value="EL">Ελληνικά (ギリシャ語)</option>
+      <option value="HE">עברית (ヘブライ語)</option>
+      <option value="HI">हिन्दी (ヒンディー語)</option>
+      <option value="HU">Magyar (ハンガリー語)</option>
+      <option value="ID">Bahasa Indonesia (インドネシア語)</option>
+      <option value="IT">Italiano (イタリア語)</option>
+      <option value="JA" selected>日本語</option>
+      <option value="KO">한국어 (韓国語)</option>
+      <option value="NL">Nederlands (オランダ語)</option>
+      <option value="PL">Polski (ポーランド語)</option>
+      <option value="PT">Português (ポルトガル語)</option>
+      <option value="RU">Русский (ロシア語)</option>
+      <option value="SV">Svenska (スウェーデン語)</option>
+      <option value="TR">Türkçe (トルコ語)</option>
+      <option value="UK">Українська (ウクライナ語)</option>
+      <option value="UR">اردو (ウルドゥー語)</option>
+      <option value="VI">Tiếng Việt (ベトナム語)</option>
+      <option value="ZH">简体中文 (中国語・簡体字)</option>
+      <option value="ZHT">繁體中文 (中国語・繁体字)</option>
+    </select>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
